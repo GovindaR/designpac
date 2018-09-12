@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        .service {
+            padding: 88px 0;
+            text-align: center;
+        }
+        
+        .service .row {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .service h1 {
+            margin-bottom: 20px;
+            color: #253858;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        
+        .service-tab {
+            width: 100%;
+        }
+        
+        .service-tab p {
+            display: inline-block;
+            font-size: 18px;
+            color: #677083;
+            margin: 15px 0;
+            text-decoration: none;
+        }
+        
+        .service-img {
+            margin-right: -4px;
+            display: inline-block;
+            width: 200px;
+            text-decoration: none;
+            border-bottom: 2px solid #ebebeb;
+            transition: all .5s;
+        }
+        
+        .service-img:hover p,
+        .service-img:focus p,
+        .service-img:active p {
+            color: #253858;
+            font-weight: 600;
+        }
+        
+        .service-img:focus,
+        .service-img:hover,
+        .service-img:active {
+            border-bottom: 2px solid #045de2;
+        }
+        
+        .myborder {
+            border-bottom: 2px solid #045de2;
+        }
+        
+        .myborder p {
+            color: #253858;
+            font-weight: 600;
+        }
+        /* package */
+        
+        .package,
+        .package1,
+        .package2 {
+            display: inline-block;
+            padding: 50px 0 40px 0;
+            transition: all .2s ease-in;
+            transition-delay: .5s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .package {
+            transform: translateX(330px);
+        }
+        
+        .package1 {
+            transform: translateX(20px);
+        }
+        
+        .package2 {
+            transform: translateX(-280px);
+        }
+        
+        .package h1,
+        .package1 h1,
+        .package2 h1 {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .buttom button {
+            background: #e3ecf7;
+            border: none;
+            outline: none;
+            padding: 12px 28px;
+            border-radius: 25px;
+        }
+        
+        .buttom .btn-blue {
+            background: #0458d6;
+            position: relative;
+            z-index: 11;
+            color: #fff;
+        }
+        
+        .buttom button:last-child {
+            padding-left: 30px;
+            margin-left: -26px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    Simple & Transparent Always
+                </h1>
+                <div class="service-tab">
+                    <a href="#" id="design" class="service-img" onclick="myClick()">
+                        <div>
+                            <img src="design.png" alt="design">
+                        </div>
+                        <p id="service-para">Design</p>
+                    </a>
+                    <a href="#" id="developer" class="service-img" onclick="myClick1()">
+                        <div>
+                            <img src="developer.png" alt="developer">
+                        </div>
+                        <p class="developer-para">Development</p>
+                    </a>
+                    <a href="#" id="market" class="service-img" onclick="myClick2()">
+                        <div>
+                            <img src="marketing.png" alt="marketing">
+                        </div>
+                        <p class="market-para">Marketing</p>
+                    </a>
+                </div>
+                <div class="package" id="package">
+                    <h1>
+                        Design As a Service
+                    </h1>
+                    <div class="buttom">
+                        <button class="month" onclick="myMonth()" class="btn-blue">Monthly</button>
+                        <button class="hour" onclick="myHour()">Hourly</button>
+                    </div>
+                </div>
+                <div class="package1" id="package1">
+                    <h1>
+                        Development As a Service
+                    </h1>
+                    <div class="buttom">
+                        <button class="month" onclick="myMonth()" class="btn-blue">Monthly</button>
+                        <button class="hour" onclick="myHour()">Hourly</button>
+                    </div>
+                </div>
+                <div class="package2" id="package2">
+                    <h1>
+                        Marketing As a Service
+                    </h1>
+                    <div class="buttom">
+                        <button class="month" onclick="myMonth()" class="btn-blue">Monthly</button>
+                        <button class="hour" onclick="myHour()">Hourly</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- script -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        let pak = document.getElementById('package');
+        let pak1 = document.getElementById('package1');
+        let pak2 = document.getElementById('package2');
+        let element = document.getElementById("design");
+        let element1 = document.getElementById("developer");
+        let element2 = document.getElementById("market");
+        let mymonth = document.getElementsByClassName('month');
+        let myhour = document.getElementsByClassName('hour');
+
+
+        function myClick() {
+            pak.style.cssText = 'opacity: 1;visibility:visible;';
+            pak1.style.cssText = 'opacity: 0;visibility:hidden;';
+            pak2.style.cssText = 'opacity: 0;visibility:hidden;';
+
+            element.classList.add("myborder");
+            element1.classList.remove("myborder");
+            element2.classList.remove("myborder");
+
+        }
+
+        function myClick1() {
+            pak1.style.cssText = 'opacity: 1;visibility:visible;';
+            pak.style.cssText = 'opacity: 0;visibility:hidden;';
+            pak2.style.cssText = 'opacity: 0;visibility:hidden;';
+
+            element1.classList.add("myborder");
+            element.classList.remove("myborder");
+            element2.classList.remove("myborder");
+        }
+
+        function myClick2() {
+            pak2.style.cssText = 'opacity: 1;visibility:visible;';
+            pak1.style.cssText = 'opacity: 0;visibility:hidden;';
+            pak.style.cssText = 'opacity: 0;visibility:hidden;';
+
+            element2.classList.add("myborder");
+            element1.classList.remove("myborder");
+            element.classList.remove("myborder");
+        }
+
+        function myMonth() {
+            mymonth.classList.add('btn-blue');
+            myhour.classList.remove('btn-blue');
+
+        }
+
+        function myHour() {
+            myhour.classList.add('btn-blue');
+            mymonth.classList.remove('btn-blue');
+
+        }
+    </script>
+</body>
+
+</html>
