@@ -7,10 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Service</title>
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik:400,500,700,700i" rel="stylesheet">
+
     <!-- css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <style>
+        boby {
+            font-family: 'Roboto';
+        }
+        
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
         .service {
             padding: 88px 0;
             text-align: center;
@@ -79,21 +93,15 @@
             display: inline-block;
             padding: 50px 0 40px 0;
             transition: all .2s ease-in;
-            transition-delay: .5s;
             opacity: 0;
             visibility: hidden;
+            display: none;
         }
         
         .package {
-            transform: translateX(330px);
-        }
-        
-        .package1 {
-            transform: translateX(20px);
-        }
-        
-        .package2 {
-            transform: translateX(-280px);
+            display: block;
+            opacity: 1;
+            visibility: visible;
         }
         
         .package h1,
@@ -101,6 +109,11 @@
         .package2 h1 {
             font-size: 30px;
             margin-bottom: 40px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        
+        .package p {
+            color: #253858;
         }
         
         .buttom button {
@@ -122,6 +135,570 @@
             padding-left: 30px;
             margin-left: -26px;
         }
+        /* detail list */
+        
+        .design-left {
+            background-color: #0454cd;
+            border-radius: 5px;
+            padding-top: 10%;
+            margin-right: 10%;
+            padding-bottom: 21%;
+            text-align: center;
+        }
+        
+        .design-left .design__title {
+            margin-top: 0;
+            font-size: 20px;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: Arial, sans-serif;
+            font-size: 52px;
+            line-height: 40px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        .design-right .design__title {
+            line-height: 30px;
+            margin-bottom: 8px;
+            font-family: "Nunito", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #253858;
+        }
+        
+        .design__subtitle {
+            font-family: "Nunito", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.69);
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        
+        .detaiil-list {
+            background: #e3edf8;
+        }
+        
+        .detaiil-list .active-time {
+            font-family: Nunito;
+            font-size: 16px;
+            color: #ffffff;
+            border-bottom: 1px dotted hsla(0, 0%, 100%, .5);
+            padding-bottom: 2px;
+            cursor: help;
+        }
+        
+        .design-left p span {
+            font-size: 16px;
+        }
+        
+        .design-left p {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .list-item {
+            display: block;
+            width: 100%;
+            margin-top: -60px;
+            margin-bottom: 200px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 27px 0px rgba(10, 35, 71, 0.16);
+        }
+        
+        .signup-btn {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .btn-sign {
+            text-decoration: none;
+            text-shadow: none;
+            font-weight: 700;
+            border-style: solid;
+            border-radius: 3px;
+            transition: background-color .15s ease-out;
+            padding: 16px 25px;
+            font-size: 14px;
+            line-height: 1.3333333;
+            box-shadow: 0 31px 38px -15px rgba(11, 3, 60, 0.47);
+            transition: 1s all ease-in-out;
+            background: rgba(247, 140, 0, 1);
+            background: -moz-linear-gradient(45deg, rgba(247, 140, 0, 1) 0%, rgba(213, 98, 22, 1) 100%);
+            background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(247, 140, 0, 1)), color-stop(100%, rgba(213, 98, 22, 1)));
+            background: -webkit-linear-gradient(45deg, rgba(247, 140, 0, 1) 0%, rgba(213, 98, 22, 1) 100%);
+            background: -o-linear-gradient(45deg, rgba(247, 140, 0, 1) 0%, rgba(213, 98, 22, 1) 100%);
+            background: -ms-linear-gradient(45deg, rgba(247, 140, 0, 1) 0%, rgba(213, 98, 22, 1) 100%);
+            background: linear-gradient(45deg, rgba(247, 140, 0, 1) 0%, rgba(213, 98, 22, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f78c00', endColorstr='#d56216', GradientType=1);
+            font-family: "Nunito", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            color: #ffffff !important;
+        }
+        
+        .btn-sign:hover {
+            text-decoration: none;
+            box-shadow: 0 31px 38px -15px rgba(11, 3, 60, 0.47) !important;
+            background: rgba(213, 98, 22, 1);
+            background: -moz-linear-gradient(-45deg, rgba(213, 98, 22, 1) 0%, rgba(247, 140, 0, 1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(213, 98, 22, 1)), color-stop(100%, rgba(247, 140, 0, 1)));
+            background: -webkit-linear-gradient(-45deg, rgba(213, 98, 22, 1) 0%, rgba(247, 140, 0, 1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(213, 98, 22, 1) 0%, rgba(247, 140, 0, 1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(213, 98, 22, 1) 0%, rgba(247, 140, 0, 1) 100%);
+            background: linear-gradient(135deg, rgba(213, 98, 22, 1) 0%, rgba(247, 140, 0, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d56216', endColorstr='#f78c00', GradientType=1);
+        }
+        
+        .semi__subtitle {
+            margin-top: 0;
+            font-size: 20px;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Nunito", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.69);
+        }
+        
+        .tick-desgin {
+            border-top: 1px solid #d8d8d8;
+        }
+        
+        .design-right .znListItems-icon {
+            font-style: normal;
+            line-height: 1;
+            display: inline-block;
+            color: #333;
+            width: auto;
+            height: auto;
+            position: relative;
+            text-align: center;
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            font-size: 14px;
+            font-weight: normal;
+            opacity: 1;
+            vertical-align: middle;
+            margin-right: 10px;
+            font-size: 19px;
+            color: #f47207;
+        }
+        
+        .design-right .znListItems-text {
+            font-family: "Nunito", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #253858;
+        }
+        
+        .design-right .znListItems-icon:before {
+            content: attr(data-zn_icon);
+        }
+        
+        .design-right ul li {
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+        
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-6,
+        .col-sm-2 {
+            float: left;
+        }
+        
+        .item-one {
+            padding: 40px 80px;
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid #e3ecf7;
+        }
+        
+        .left-item h4 {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .dev-img img {
+            display: block;
+            width: 100%;
+        }
+        
+        .left-item {
+            text-align: center;
+        }
+        
+        .left-item ul {
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        .left-item ul p {
+            text-align: left;
+            font-size: 20px;
+            padding-left: 33%;
+            background: url('tick.png') 24% 2px no-repeat;
+        }
+        
+        .left-item ul li {
+            margin-bottom: 20px;
+        }
+        
+        .tick-desgin .ul-left {
+            margin-left: 0;
+            padding: 0;
+            list-style: none;
+            float: left;
+        }
+        
+        .tick-desgin .ul-right {
+            float: right;
+        }
+        
+        .list-item button {
+            font-size: 18px;
+            color: #fff;
+            border: none;
+            outline: none;
+            text-align: center;
+            padding: 10px 40px;
+            border-radius: 5px;
+            background-color: rgb(4, 84, 205);
+        }
+        
+        .right-item ul li {
+            cursor: pointer;
+            padding: 20px 10px;
+            border-bottom: 1px dashed #e1e1e1;
+            transition: all .5s ease-in-out;
+        }
+        
+        .right-item ul li:hover {
+            background: #e3ecf7;
+        }
+        
+        .right-item ul li h4 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .left-text {
+            float: left;
+        }
+        
+        .right-text {
+            float: right;
+        }
+        
+        .right-text p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .right-text span {
+            color: #f58528;
+            font-size: 26px;
+        }
+        
+        .right-item ul li p {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        
+        .right-item ul li:last-child {
+            border-bottom: none;
+        }
+        
+        #list-item {
+            display: none;
+        }
+        
+        #list-item2 {
+            display: none;
+        }
+        
+        #list-item3 {
+            display: none;
+        }
+        /* marketing */
+        
+        .marketing-one {
+            border: none;
+        }
+        
+        .marketing-one h4 {
+            color: #1f242c;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .list-row .col-sm-2 {
+            text-align: center;
+        }
+        
+        .list-row {
+            padding: 0 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px dashed #e3ecf7;
+        }
+        
+        .list-row .right-text {
+            float: none;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .list-row .right-text span {
+            font-size: 18px;
+        }
+        
+        .list-row .right-text p {
+            font-size: 16px;
+        }
+        
+        .list-row-bottom h4 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .list-row-bottom {
+            border: none;
+        }
+        
+        .title-list {
+            padding: 10px 0;
+        }
+        
+        .sub-list {
+            padding: 0;
+            margin: 0;
+            padding: 5px;
+            padding-left: 10px;
+            transition: all .5s;
+        }
+        
+        .sub-list:hover {
+            background: #e3ecf7;
+        }
+        
+        .sub-list p {
+            font-size: 14px;
+            color: #1f242c;
+        }
+        
+        .overlow-scroll {
+            width: 100%;
+        }
+        
+        .down-arrow {
+            display: none;
+        }
+        
+        .mobileview-table {
+            display: none;
+        }
+    </style>
+    <style>
+        @media only screen and (max-width: 500px) {
+            .service h1 {
+                font-size: 22px;
+            }
+            .service-tab {
+                padding: 0 20px;
+                display: flex;
+                width: 180%;
+            }
+            .overlow-scroll {
+                overflow: scroll;
+            }
+            .item-one {
+                padding: 40px 15px;
+            }
+            .design-left {
+                margin-right: 0;
+            }
+            .design-right {
+                margin-top: 30px;
+            }
+            .tick-desgin .ul-left {
+                float: none;
+            }
+            .tick-desgin .ul-right {
+                float: none;
+            }
+            .service h1 {
+                margin-bottom: 35px;
+            }
+            .package,
+            .package1,
+            .package2 {
+                padding: 43px 0 8px 0;
+            }
+            .package h1,
+            .package1 h1,
+            .package2 h1 {
+                margin-bottom: 12px;
+            }
+            .left-item ul p {
+                padding-left: 26%;
+                background: url(tick.png) 18% 2px no-repeat;
+            }
+            .right-text {
+                display: inline-block;
+                margin-top: 0px;
+                float: none;
+            }
+            .left-text {
+                float: none;
+            }
+            .list-row .col-sm-2 {
+                padding: 20px;
+                text-align: center;
+                margin-top: 30px;
+                padding-bottom: 30px;
+                box-shadow: 0px 0px 27px 0px rgba(10, 35, 71, 0.16);
+            }
+            .list-row .right-text {
+                float: none;
+                text-align: left;
+                margin: 10px 0;
+            }
+            .list-item .list-row button {
+                display: block;
+                margin: auto;
+            }
+            .right-item ul li:first-child {
+                margin-top: 20px;
+            }
+            .right-item ul li {
+                border-top: 1px dashed #e1e1e1;
+            }
+            .right-item ul li:last-child {
+                border-bottom: 1px dashed #e1e1e1;
+            }
+            .icono-caretDown {
+                position: absolute;
+                width: 12px;
+                height: 2px;
+                left: 0;
+                margin: 7px 11px;
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+            .icono-caretDown::before,
+            .icono-caretDown::after {
+                content: '';
+                width: 14px;
+                height: 2px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                right: 2px;
+                box-shadow: inset 0 0 0 32px;
+                -webkit-transform-origin: right;
+                transform-origin: right;
+            }
+            .icono-caretDown::after {
+                content: '';
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+            .icono-caretDown::before {
+                content: '';
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            .drop-down-btn {
+                width: 100%;
+                position: relative;
+                left: -17px;
+            }
+            .down-arrow {
+                display: block;
+                margin-top: 30px;
+            }
+            .down-arrow p {
+                font-size: 12px;
+            }
+            .col-50 {
+                float: left;
+                width: 50%;
+            }
+            .col-50.title-list {
+                text-align: left;
+            }
+            .sub-list .col-50 {
+                text-align: left;
+            }
+            .sub-list:hover {
+                background: #cadaee;
+            }
+            .title-item-list.col-50 {
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 5px 0;
+            }
+            .mobileview-table {
+                display: block;
+            }
+            .mobileview-table:first-child {
+                margin-top: 30px;
+            }
+            .center-paragraph {
+                text-align: center;
+            }
+            #mobile-list-tab1,
+            #mobile-list-tab2,
+            #mobile-list-tab3 {
+                overflow: hidden;
+                height: 0;
+                transition: all .5s ease-out;
+            }
+            .list-row-desktop {
+                display: none;
+            }
+            .list-item {
+                margin-left: 12px;
+                margin-right: 12px;
+                margin-bottom: 100px;
+            }
+             ::-webkit-scrollbar-thumb {
+                background: transparent;
+            }
+             ::-webkit-scrollbar {
+                width: 0px;
+                /* remove scrollbar space */
+                background: transparent;
+                /* optional: just make scrollbar invisible */
+            }
+            .mystyle-arrow {
+                transform: rotate(-90deg);
+            }
+            .drop-down-btn {
+                color: rgb(4, 84, 205) !important;
+            }
+            #col-sm-2-1,
+            #col-sm-2-2,
+            #col-sm-2-3 {
+                height: 195px;
+                transition: height 2s;
+            }
+            .left-item {
+                box-shadow: 0px 0px 27px 0px rgba(10, 35, 71, 0.16);
+                padding: 20px 12px;
+            }
+        }
     </style>
 </head>
 
@@ -132,58 +709,1602 @@
                 <h1>
                     Simple & Transparent Always
                 </h1>
-                <div class="service-tab">
-                    <a href="#" id="design" class="service-img" onclick="myClick()">
-                        <div>
-                            <img src="design.png" alt="design">
-                        </div>
-                        <p id="service-para">Design</p>
-                    </a>
-                    <a href="#" id="developer" class="service-img" onclick="myClick1()">
-                        <div>
-                            <img src="developer.png" alt="developer">
-                        </div>
-                        <p class="developer-para">Development</p>
-                    </a>
-                    <a href="#" id="market" class="service-img" onclick="myClick2()">
-                        <div>
-                            <img src="marketing.png" alt="marketing">
-                        </div>
-                        <p class="market-para">Marketing</p>
-                    </a>
+                <div class="overlow-scroll">
+                    <div class="service-tab">
+                        <a href="#" id="design" class="service-img" onclick="setTimeout(myClick,500)">
+                            <div>
+                                <img src="design.png" alt="design">
+                            </div>
+                            <p id="service-para">Design</p>
+                        </a>
+                        <a href="#" id="developer" class="service-img" onclick="setTimeout(myClick1,500)">
+                            <div>
+                                <img src="developer.png" alt="developer">
+                            </div>
+                            <p class="developer-para">Development</p>
+                        </a>
+                        <a href="#" id="market" class="service-img" onclick="setTimeout(myClick2,500)">
+                            <div>
+                                <img src="marketing.png" alt="marketing">
+                            </div>
+                            <p class="market-para">Marketing</p>
+                        </a>
+                    </div>
                 </div>
                 <div class="package" id="package">
                     <h1>
                         Design As a Service
                     </h1>
-                    <div class="buttom">
-                        <button class="month" onclick="myMonth()" class="btn-blue">Monthly</button>
-                        <button class="hour" onclick="myHour()">Hourly</button>
-                    </div>
+                    <p>There is always one flat fee every month. </p>
                 </div>
                 <div class="package1" id="package1">
                     <h1>
                         Development As a Service
                     </h1>
                     <div class="buttom">
-                        <button class="month" onclick="myMonth()" class="btn-blue">Monthly</button>
-                        <button class="hour" onclick="myHour()">Hourly</button>
+                        <button id="month1" onclick="setTimeout(myMonth('month1','hour1','list-item'),500)" class="btn-blue">Monthly</button>
+                        <button id="hour1" onclick="setTimeout(myHour('month1','hour1','list-item2'),500)">Hourly</button>
                     </div>
                 </div>
                 <div class="package2" id="package2">
                     <h1>
                         Marketing As a Service
                     </h1>
-                    <div class="buttom">
-                        <button class="month" onclick="myMonth()" class="btn-blue">Monthly</button>
-                        <button class="hour" onclick="myHour()">Hourly</button>
+                    <!-- <div class="buttom">
+                        <button id="month2" onclick="setTimeout(myMonth('month2','hour2'),500)" class="btn-blue">Monthly</button>
+                        <button id="hour2" onclick="setTimeout(myHour('month2','hour2'),500)">Hourly</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- table list -->
+    <section class="detaiil-list">
+        <div class="container">
+            <div class="row">
+
+                <!-- Design As a Service -->
+
+                <div class="list-item" id="list-item1">
+                    <div class="item-one clearfix">
+                        <div class="col-sm-5">
+                            <div class="design-left">
+                                <h3 class="design__title">$300</h3>
+                                <h4 class="design__subtitle">per month</h4>
+                                <span class="active-time">One active task at a time</span>
+                                <p style="text-align: center;">
+                                    <span style="color: #ffffff;">24 hrs turnaround time</span>
+                                </p>
+                                <div class="signup-btn">
+                                    <a href="http://www.myaccount.designpac.net/" class="btn-sign">
+                                        <span>Sign Up</span>
+                                    </a>
+                                </div>
+                                <h4 class="semi__subtitle">Semiannually - $240/mo.</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 design-right">
+                            <h3 class="design__title">Here are what we can design:</h3>
+                            <div class="tick-desgin clearfix">
+                                <ul class="ul-left">
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Logos & Branding</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Info-graphics</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Brochure & Flyers</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Tshirt Designs</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">GIFs</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Packaging</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Flat Illustration</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Merchandise</span>
+                                    </li>
+
+                                </ul>
+                                <ul class="ul-right">
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Web/App UI</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Social Media Graphics</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Email Newsletter Design</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Book Covers</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Postcards</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">PPT Design</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Email Template - Coded</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="znListItems-icon znListItems-icon-3" data-zniconfam="fontello" data-zn_icon=""></span>
+                                        <span class="znListItems-text">Many more</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Developer As a Service -->
+
+                <div class="list-item" id="list-item">
+                    <div class="item-one clearfix">
+                        <div class="col-sm-4 left-item">
+                            <div class="dev-img">
+                                <img src="dev.png" alt="dev">
+                            </div>
+                            <h4>Web Developers</h4>
+                            <ul>
+                                <li>
+                                    <p>4 hrs a day</p>
+                                </li>
+                                <li>
+                                    <p>Dedicated Developers</p>
+                                </li>
+                                <li>
+                                    <p>Account Manager</p>
+                                </li>
+                            </ul>
+                            <button>Hire</button>
+                        </div>
+                        <div class="col-sm-8 right-item">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Frontend Developer
+                                        </h4>
+                                        <p>HTML/CSS, Jquery, Javascript, Ajax</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$600</span>/mo.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Backend Developer
+                                        </h4>
+                                        <p>PHP, MySql, Python, Ruby on Rails</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$800</span>/mo.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Full Stack Developer
+                                        </h4>
+                                        <p>Frontend development, Backend development</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$500</span>/mo.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Website Maintainence
+                                        </h4>
+                                        <p>Wordpress, Joomla, Magento, Shopify, Drupal</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$99</span>/mo.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>CMS
+                                        </h4>
+                                        <p>Wordpress, Joomla, Magento, Shopify, Drupal</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$500</span>/mo.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-one clearfix">
+                        <div class="col-sm-4 left-item">
+                            <div class="dev-img">
+                                <img src="dev.png" alt="dev">
+                            </div>
+                            <h4>Mobile Developers</h4>
+                            <ul>
+                                <li>
+                                    <p>4 hrs a day</p>
+                                </li>
+                                <li>
+                                    <p>Dedicated Developers</p>
+                                </li>
+                                <li>
+                                    <p>Account Manager</p>
+                                </li>
+                            </ul>
+                            <button>Hire</button>
+                        </div>
+                        <div class="col-sm-8 right-item">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>OS Developer
+                                        </h4>
+                                        <p>Swift, Objective C</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$600</span>/mo.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Android Developer
+                                        </h4>
+                                        <p>XML, Java, Kotlin</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$800</span>/mo.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Hybrid App Developer
+                                        </h4>
+                                        <p>Ionic, React Native</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$500</span>/mo.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item" id="list-item2">
+                    <div class="item-one clearfix">
+                        <div class="col-sm-4 left-item">
+                            <div class="dev-img">
+                                <img src="dev.png" alt="dev">
+                            </div>
+                            <h4>Web Developers</h4>
+                            <ul>
+                                <li>
+                                    <p>4 hrs a day</p>
+                                </li>
+                                <li>
+                                    <p>Dedicated Developers</p>
+                                </li>
+                                <li>
+                                    <p>Account Manager</p>
+                                </li>
+                            </ul>
+                            <button>Hire</button>
+                        </div>
+                        <div class="col-sm-8 right-item">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Frontend Developer
+                                        </h4>
+                                        <p>HTML/CSS, Jquery, Javascript, Ajax</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$600</span>/hr.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Backend Developer
+                                        </h4>
+                                        <p>PHP, MySql, Python, Ruby on Rails</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$800</span>/hr.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Full Stack Developer
+                                        </h4>
+                                        <p>Frontend development, Backend development</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$500</span>/hr.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Website Maintainence
+                                        </h4>
+                                        <p>Wordpress, Joomla, Magento, Shopify, Drupal</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$99</span>/hr.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>CMS
+                                        </h4>
+                                        <p>Wordpress, Joomla, Magento, Shopify, Drupal</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$500</span>/hr.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-one clearfix">
+                        <div class="col-sm-4 left-item">
+                            <div class="dev-img">
+                                <img src="dev.png" alt="dev">
+                            </div>
+                            <h4>Mobile Developers</h4>
+                            <ul>
+                                <li>
+                                    <p>4 hrs a day</p>
+                                </li>
+                                <li>
+                                    <p>Dedicated Developers</p>
+                                </li>
+                                <li>
+                                    <p>Account Manager</p>
+                                </li>
+                            </ul>
+                            <button>Hire</button>
+                        </div>
+                        <div class="col-sm-8 right-item">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>OS Developer
+                                        </h4>
+                                        <p>Swift, Objective C</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$600</span>/hr.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Android Developer
+                                        </h4>
+                                        <p>XML, Java, Kotlin</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$800</span>/hr.</p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="left-text">
+                                        <h4>Hybrid App Developer
+                                        </h4>
+                                        <p>Ionic, React Native</p>
+                                    </div>
+                                    <div class="right-text">
+                                        <p><span>$500</span>/hr.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing As a Service -->
+
+                <div class="list-item" id="list-item3">
+                    <div class="marketing-one item-one clearfix">
+                        <div class="clearfix list-row">
+                            <div class="col-sm-6">
+                                <h4>Plans</h4>
+                            </div>
+                            <div class="col-sm-2" id="col-sm-2-1">
+                                <h4>Lite</h4>
+                                <div class="right-text">
+                                    <p><span>$600</span>/mo.</p>
+                                </div>
+                                <button>Hire</button>
+                                <div class="mobile-list-tab" id="mobile-list-tab1">
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>Analysis</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Business Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Competitor Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Keyword Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Search Engine Optimization</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>SEO Audit</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Link Building</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Keyword Suggestion</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>SEO Management</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Content Marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Blogging</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Website Context</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Press Releases
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Infographics</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Video Content</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Guest Post
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Social Media marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Content Development & Distribution(Posts)</p>
+                                            </div>
+                                            <div class="col-50">
+                                                <p class="center-paragraph">-</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Community Management</p>
+                                            </div>
+                                            <div class="col-50">
+                                                <p class="center-paragraph">-</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Measurement & Optimization
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+                                                <p class="center-paragraph">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Email Marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Campaign</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Measurement & Optimization</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Bonus Services</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Business Profile Creations</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Local SEO</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="down-arrow">
+                                    <p>View Details</p>
+                                    <a class="drop-down-btn" onclick="buttonClick('mobile-list-tab1','icono-caretDown1','col-sm-2-1')">
+                                        <i id="icono-caretDown1" class="icono-caretDown"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2" id="col-sm-2-2">
+                                <h4>Pro</h4>
+                                <div class="right-text">
+                                    <p><span>$600</span>/mo.</p>
+                                </div>
+                                <button>Hire</button>
+                                <div class="mobile-list-tab" id="mobile-list-tab2">
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>Analysis</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Business Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Competitor Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Keyword Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Search Engine Optimization</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>SEO Audit</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Link Building</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Keyword Suggestion</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>SEO Management</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Content Marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Blogging</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Website Context</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Press Releases
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Infographics</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Video Content</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Guest Post
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Social Media marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Content Development & Distribution(Posts)</p>
+                                            </div>
+                                            <div class="col-50">
+                                                <p class="center-paragraph">2 per week</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Community Management</p>
+                                            </div>
+                                            <div class="col-50">
+                                                .
+                                                <p class="center-paragraph">yes</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Measurement & Optimization
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Email Marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Campaign</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Measurement & Optimization</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Bonus Services</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Business Profile Creations</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Local SEO</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="down-arrow">
+                                    <p>View Details</p>
+                                    <a class="drop-down-btn" onclick="buttonClick('mobile-list-tab2','icono-caretDown2','col-sm-2-2')">
+                                        <i class="icono-caretDown" id="icono-caretDown2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2" id="col-sm-2-3">
+                                <h4>Plus</h4>
+                                <div class="right-text">
+                                    <p><span>$600</span>/mo.</p>
+                                </div>
+                                <button>Hire</button>
+                                <div class="mobile-list-tab" id="mobile-list-tab3">
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>Analysis</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Business Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Competitor Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Keyword Analysis</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Search Engine Optimization</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>SEO Audit</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Link Building</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Keyword Suggestion</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>SEO Management</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Content Marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Blogging</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Website Context</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Press Releases
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Infographics</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Video Content</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Guest Post
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Content Marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Blogging</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Website Context</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Press Releases
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Infographics</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Video Content</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Guest Post
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Social Media marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Content Development & Distribution(Posts)</p>
+                                            </div>
+                                            <div class="col-50">
+                                                <p class="center-paragraph">3 per week</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Community Management</p>
+                                            </div>
+                                            <div class="col-50">
+                                                <p class="center-paragraph">yes</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Measurement & Optimization
+                                                </p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Email Marketing</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Campaign</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Measurement & Optimization</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix list-row mobileview-table">
+                                        <div class="clearfix list-row-bottom">
+                                            <div class="col-50 title-list">
+                                                <h4>
+                                                    Bonus Services</h4>
+                                            </div>
+                                            <div class="col-50 title-item-list">
+                                                <a href="#"><img src="tick.png" alt="tick"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Business Profile Creations</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix list-row-bottom sub-list">
+                                            <div class="col-50">
+                                                <p>Local SEO</p>
+                                            </div>
+                                            <div class="col-50">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="down-arrow">
+                                    <p>View Details</p>
+                                    <a class="drop-down-btn" onclick="buttonClick('mobile-list-tab3','icono-caretDown3','col-sm-2-3')">
+                                        <i class="icono-caretDown" id="icono-caretDown3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix list-row  list-row-desktop">
+                            <div class="clearfix list-row-bottom">
+                                <div class="col-sm-6 title-list">
+                                    <h4>Analysis</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Business Analysis</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Competitor Analysis</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Keyword Analysis</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix list-row  list-row-desktop">
+                            <div class="clearfix list-row-bottom">
+                                <div class="col-sm-6 title-list">
+                                    <h4>Search Engine Optimization</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>SEO Audit</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Link Building</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Keyword Suggestion</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>SEO Management</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix list-row  list-row-desktop">
+                            <div class="clearfix list-row-bottom">
+                                <div class="col-sm-6 title-list">
+                                    <h4>Content Marketing</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Blogging</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Website Context</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Press Releases</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Infographics</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Video Content</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Guest Post</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix list-row  list-row-desktop">
+                            <div class="clearfix list-row-bottom">
+                                <div class="col-sm-6 title-list">
+                                    <h4>Social Media marketing</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Content Development & Distribution(Posts)</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p>-</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p>2 per week</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p>3 per week</p>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Community Management</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p>-</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p>yes</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p>yes</p>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Measurement & Optimization</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix list-row  list-row-desktop">
+                            <div class="clearfix list-row-bottom">
+                                <div class="col-sm-6 title-list">
+                                    <h4>Email Marketing</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Campaign</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Measurement & Optimization</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix list-row  list-row-desktop">
+                            <div class="clearfix list-row-bottom">
+                                <div class="col-sm-6 title-list">
+                                    <h4>Bonus Services</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#"><img src="tick.png" alt="tick"></a>
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Business Profile Creations</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                            <div class="clearfix list-row-bottom sub-list">
+                                <div class="col-sm-6">
+                                    <p>Local SEO</p>
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
 
 
@@ -200,50 +2321,94 @@
         let element = document.getElementById("design");
         let element1 = document.getElementById("developer");
         let element2 = document.getElementById("market");
-        let mymonth = document.getElementsByClassName('month');
-        let myhour = document.getElementsByClassName('hour');
+        let listItem1 = document.getElementById('list-item');
+        let listItem2 = document.getElementById('list-item1');
+        let listItem3 = document.getElementById('list-item2');
+        let listItem4 = document.getElementById('list-item3');
 
 
         function myClick() {
-            pak.style.cssText = 'opacity: 1;visibility:visible;';
-            pak1.style.cssText = 'opacity: 0;visibility:hidden;';
-            pak2.style.cssText = 'opacity: 0;visibility:hidden;';
+            pak.style.cssText = 'display:block;opacity: 1;visibility:visible;';
+            pak1.style.cssText = 'display:none; opacity: 0;visibility:hidden;';
+            pak2.style.cssText = 'display:none;opacity: 0;visibility:hidden;';
 
             element.classList.add("myborder");
             element1.classList.remove("myborder");
             element2.classList.remove("myborder");
+            listItem1.style.cssText = 'display:none;';
+            listItem2.style.cssText = 'display:block;';
+            listItem3.style.cssText = 'display:none;';
+            listItem4.style.cssText = 'display:none;';
 
         }
 
         function myClick1() {
-            pak1.style.cssText = 'opacity: 1;visibility:visible;';
-            pak.style.cssText = 'opacity: 0;visibility:hidden;';
-            pak2.style.cssText = 'opacity: 0;visibility:hidden;';
+            pak1.style.cssText = 'display:block;opacity: 1;visibility:visible;';
+            pak.style.cssText = 'display:none;opacity: 0;visibility:hidden;';
+            pak2.style.cssText = 'display:none;opacity: 0;visibility:hidden;';
 
             element1.classList.add("myborder");
             element.classList.remove("myborder");
             element2.classList.remove("myborder");
+            listItem1.style.cssText = 'display:block;';
+            listItem2.style.cssText = 'display:none;transition: all .2s ease-in;';
+            listItem3.style.cssText = 'display:none;';
+            listItem4.style.cssText = 'display:none;';
+
         }
 
+
         function myClick2() {
-            pak2.style.cssText = 'opacity: 1;visibility:visible;';
-            pak1.style.cssText = 'opacity: 0;visibility:hidden;';
-            pak.style.cssText = 'opacity: 0;visibility:hidden;';
+            pak2.style.cssText = 'display:block;opacity: 1;visibility:visible;';
+            pak1.style.cssText = 'display:none;opacity: 0;visibility:hidden;';
+            pak.style.cssText = 'display:none;opacity: 0;visibility:hidden;';
 
             element2.classList.add("myborder");
             element1.classList.remove("myborder");
             element.classList.remove("myborder");
+            listItem1.style.cssText = 'display:none;';
+            listItem2.style.cssText = 'display:none;  transition: all .2s ease-in;';
+            listItem3.style.cssText = 'display:none;';
+            listItem4.style.cssText = 'display:block;';
+
         }
 
-        function myMonth() {
+        function myMonth(myMonth, myHour, item) {
+            let mymonth = document.getElementById(myMonth);
+            let myhour = document.getElementById(myHour);
             mymonth.classList.add('btn-blue');
             myhour.classList.remove('btn-blue');
+            let listItem = document.getElementById(item);
+            listItem.style.display = 'block';
+            listItem3.style.display = 'none';
 
         }
 
-        function myHour() {
+        function myHour(myMonth, myHour, item1) {
+            let mymonth = document.getElementById(myMonth);
+            let myhour = document.getElementById(myHour);
             myhour.classList.add('btn-blue');
             mymonth.classList.remove('btn-blue');
+            let listItem = document.getElementById(item1);
+            listItem1.style.display = 'none';
+            listItem3.style.display = 'block';
+
+        }
+
+        function buttonClick(dropdwon, rotate, heightAnimatio) {
+            let dropDwon = document.getElementById(dropdwon);
+            let arrowRotate = document.getElementById(rotate);
+            let heightParent = document.getElementById(heightAnimatio);
+            if (dropDwon.style.height === "auto") {
+                heightParent.style.cssText = 'height:190px;';
+                dropDwon.style.cssText = 'height:0;overflow: hidden;';
+                document.getElementById(rotate).classList.remove("mystyle-arrow");
+            } else {
+                heightParent.style.cssText = 'height:100%;';
+                dropDwon.style.cssText = 'height:auto;overflow:visible;transition:height 5s';
+                document.getElementById(rotate).classList.add("mystyle-arrow");
+
+            }
 
         }
     </script>
